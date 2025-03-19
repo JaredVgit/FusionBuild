@@ -64,15 +64,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# MedTechForms" 
-"# MedtechForms" 
-
------ABOUT THE PROJECT-----
-
-This project was made using LARAVEL framework.
-Changelogs can be found in the file README-OUTPUTS.txt 
-
-The main purpose of this system is for users to easily put data into a form to be ready for printing.
-Available forms can be found in 'form excel file.xlsx'
-
-Please be informed that this project is still a WORK IN PROGRESS. most functions are yet to be implemented/furnished.
+#
