@@ -80,5 +80,10 @@ class LoginController extends Controller
     return $response;
 }
 
+public function index()
+    {
+        return view ('welcome');
+    }
+
 
 }

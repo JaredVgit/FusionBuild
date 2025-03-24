@@ -10,6 +10,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ProfileController;
 
+Route::get('/welcome',[LoginController::class,'index'])->name('welcome');
 Route::get('/', function () {
     return view('welcome');
 });

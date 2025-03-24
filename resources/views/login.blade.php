@@ -14,7 +14,10 @@
                         darkBlue: '#002147',
                         black: '#000000',
                         white: '#FFFFFF',
-                    }
+                    },
+                    screens: {
+                        xs: '480px', // Custom breakpoint for extra small devices
+                    },
                 }
             }
         };
@@ -56,10 +59,10 @@
             <div class="flex justify-center mb-4">
                 <img src="{{ asset('images/fusion_build_logo_3.png') }}" 
                      alt="FusionBuild Logo" 
-                     class="w-32 sm:w-40 h-auto pb-2">
+                     class="w-24 sm:w-32 md:w-40 h-auto pb-2">
             </div>
 
-            <h2 class="text-xl sm:text-2xl font-bold text-center mb-4">Login</h2>
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4">Login</h2>
 
             @if (session('success'))
                 <p class="text-green-500 text-center mb-4">{{ session('success') }}</p>
@@ -73,12 +76,12 @@
             <form action="{{ route('LoginVerification') }}" method="POST" class="space-y-4">
                 @csrf
                 <div>
-                    <label for="email" class="block text-white text-sm">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 text-sm rounded-lg text-black" required>
+                    <label for="email" class="block text-white text-sm sm:text-base">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 text-sm sm:text-base rounded-lg text-black" required>
                 </div>
                 <div>
-                    <label for="password" class="block text-white text-sm">Password</label>
-                    <input type="password" id="password" name="password" class="w-full p-2 text-sm rounded-lg text-black" required>
+                    <label for="password" class="block text-white text-sm sm:text-base">Password</label>
+                    <input type="password" id="password" name="password" class="w-full p-2 text-sm sm:text-base rounded-lg text-black" required>
                 </div>
                 
                 <!-- Forgot Password -->
@@ -92,15 +95,18 @@
             </form>
 
             <p class="text-center mt-4 text-xs sm:text-sm">
-                <a href="/register" class="text-mustardOrange">Don't have an account? Register</a>
+                <a href="/register" class="text-white">
+                    Don't have an account? <span class="text-mustardOrange">Register</span>
+                </a>
             </p>
+
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-black text-white text-center py-4 sm:py-6 text-xs sm:text-sm">
         <p>Contact us at 
-            <a href="mailto:support@mylaravelapp.com" class="text-mustardOrange">support@mylaravelapp.com</a>
+            <a href="mailto:support@mylaravelapp.com" class="text-mustardOrange">contact@fusionbuild.tech</a>
         </p>
     </footer>
 
